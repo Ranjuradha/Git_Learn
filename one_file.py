@@ -6,5 +6,12 @@ def fib(n):
     else:
         return fib(n - 1) + fib(n - 2)
     
+def sum(n):
+    if n == 0:
+        return 0
+    else:
+        return n + sum(n - 1)
+    
 number=int(input("Enter the number:"))
+print(sum(number))
 print(fib(number))
